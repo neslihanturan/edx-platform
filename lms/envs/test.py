@@ -674,5 +674,8 @@ MFE_CONFIG_OVERRIDES = {
 
 ############## Settings for survey report ##############
 SURVEY_REPORT_EXTRA_DATA = {}
-SURVEY_REPORT_ENDPOINT = "https://example.com/survey_report"
-ANONYMOUS_SURVEY_REPORT = False
+
+######################## Subscriptions API SETTINGS ########################
+SUBSCRIPTIONS_API_ROOT = "http://host.docker.internal:18750"
+SUBSCRIPTIONS_API_PATH = f"{SUBSCRIPTIONS_API_ROOT}/api/v1/stripe-subscription/"
+SUBSCRIPTIONS_SERVICE_USERNAME = 'subscriptions_worker'

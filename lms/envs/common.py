@@ -5217,6 +5217,8 @@ ENTERPRISE_BACKEND_SERVICE_EDX_OAUTH2_PROVIDER_URL = "http://127.0.0.1:8000/oaut
 # keys for  big blue button live provider
 COURSE_LIVE_GLOBAL_CREDENTIALS = {}
 
+PERSONALIZED_RECOMMENDATION_COOKIE_NAME = 'edx-user-personalized-recommendation'
+
 # .. toggle_name: ENABLE_MFE_CONFIG_API
 # .. toggle_implementation: DjangoSetting
 # .. toggle_default: False
@@ -5298,3 +5300,8 @@ ENTERPRISE_PLOTLY_SECRET = "I am a secret"
 ENTERPRISE_MANUAL_REPORTING_CUSTOMER_UUIDS = []
 
 AVAILABLE_DISCUSSION_TOURS = []
+
+######################## Subscriptions API SETTINGS ########################
+SUBSCRIPTIONS_API_ROOT = "http://host.docker.internal:18750"
+SUBSCRIPTIONS_API_PATH = f"{SUBSCRIPTIONS_API_ROOT}/api/v1/stripe-subscription/"
+SUBSCRIPTIONS_SERVICE_USERNAME = 'subscriptions_worker'
